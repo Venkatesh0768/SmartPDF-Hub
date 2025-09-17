@@ -1,9 +1,18 @@
-import { Button } from "@/components/ui/button";
-
+import CTASection from "@/components/home/CTASection";
+import DemoSection from "@/components/home/DemoSection";
+import FeatureSection from "@/components/home/FeatureSection";
+import HeroSection from "@/components/home/HeroSection";
+import HowItWorksSection from "@/components/home/HowItWorksSection";
+import PricingSection from "@/components/home/PricingSection";
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <Button variant="outline">Button</Button>
+ return (
+    <div className="min-h-screen bg-white">
+      <HeroSection />
+      <DemoSection />
+      <FeatureSection />
+      <HowItWorksSection />
+      <PricingSection />
+      <CTASection />
     </div>
   );
 }
